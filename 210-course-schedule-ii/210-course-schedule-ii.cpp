@@ -31,10 +31,12 @@ public:
         }
         
 
-        for(auto n : indegree)
+        /*for(auto n : indegree)
         {
             if(n != 0) return {}; 
-        }
-        return res;
+        }*/
+        if(res.size() == n) return res;
+        else
+        return {};
     }
 };
